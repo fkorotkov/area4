@@ -80,7 +80,7 @@ class Tests(unittest.TestCase):
         self.assertEqual(module.get_divider_character(7), "=")
         self.assertEqual(module.get_divider_character(9), "*")
         self.assertEqual(module.get_divider_character(13), "~")
-        self.assertNotEqual(module.get_divider_character(21), "¯\\_(ツ)_/¯")
+        self.assertEqual(module.get_divider_character(21), "¯\\_(ツ)_/¯")
         self.assertEqual(module.get_divider_character(23), "2")
         self.assertEqual(module.get_divider_character(24), "3")
         self.assertEqual(module.get_divider_character(25), "4")
